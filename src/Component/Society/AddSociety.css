@@ -1,0 +1,8 @@
+.add-society-wrapper {
+  max-width: 420px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  gap: 12px;
+}
