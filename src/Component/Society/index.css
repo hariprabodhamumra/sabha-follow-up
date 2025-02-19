@@ -4,3 +4,75 @@
   border-radius: 10px;
   margin-bottom: 1rem;
 }
+
+.society-container {
+  margin: 0 auto;
+  max-width: 80rem;
+  padding: 1rem;
+}
+
+.header {
+  display: flex;
+  justify-content: flex-start;
+  padding: 0 0 0 1rem;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+}
+
+.name-actions-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.overlay-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+  .card {
+    padding: 1rem;
+  }
+
+  .p-datatable {
+    width: 100% !important;
+    table-layout: auto; /* Allow table width to adjust automatically */
+    overflow-x: hidden !important; /* Prevent horizontal scroll */
+  }
+
+  .p-datatable-tbody > tr > td,
+  .p-datatable-thead > tr > th {
+    word-wrap: break-word;
+    white-space: normal;
+  }
+
+  .p-column-title {
+    display: block;
+  }
+
+  .name-actions-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .name-actions-container .actions {
+    margin-left: 0;
+    margin-top: 0.5rem;
+  }
+
+  .p-overlaypanel {
+    width: 100%;
+    max-width: 300px;
+  }
+  .p-overlaypanel .p-overlaypanel-content {
+    padding: 0.50rem!important;
+  }
+}
